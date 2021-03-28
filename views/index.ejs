@@ -4,6 +4,100 @@
     <!--Menu-->
     <%- include('./partials/navbar')  %> 
 
+    <header>
+        <!--incluindo o cabeçalho(carrousel)-->
+
+        <!--MARCADORES-->
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <!--slide em si-->
+            <div class="carousel-inner">
+                <!--configurando o primeiro slide-->
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="img/slide.png" height="500" width="550" class="d-blockw-100" alt="Primeiro Slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Primeiro Slide </h5>
+                        <p>Text</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="img/slide.png" height="500" width="550" class="d-block-100" alt="Segundo Slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Segundo Slide </h5>
+                        <p>Text</p>
+
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="img/slide.png" height="500" width="550" class="d-block-100" alt="Terceiro Slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Terceiro Slide </h5>
+                        <p>Text</p>
+
+                    </div>
+                </div>
+
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Próximo</span>
+                </a>
+            </div>
+    </header>
+    <br> <br>
+
+    <!-- conteúdo -->
+    <div class="container">
+        <!--Explicando o site -->
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <img src="img/circulo.png" class="icones">
+                <p>text</p>
+            </div>
+
+            <div class="col-md-4 text-center">
+                <img src="img/circulo.png" class="icones">
+                <p>text</p>
+            </div>
+
+            <div class="col-md-4 text-center" >
+                <img src="img/circulo.png" class="icones">
+                <p>text</p>
+            </div>
+        </div>
+
+        <!-- Visão Geral-->
+        <div class="container">
+            <ul class="nav nav-tabs">
+                <li class="nav-item"><!--Inicio do Visão Geral-->
+                  <a class="nav-link active" aria-current="page" href="#">Visão Geral</a>
+                  <br>
+                  <p>Continuar Lendo</p>
+                  <div class="card" style="width: 14rem;">
+                    <img src="img/cp-domcasmurro.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text"> Dom Casmurro <br> Machado de Assís </p>
+                    </div>
+                  </div>
+                  <br>
+                  <p>Ler Novamente</p>
+                </li><!--Fim do Visão Geral-->
+                <li class="nav-item"> <!--Inicio do Minhas Lists-->
+                  <a class="nav-link" aria-current="page" href="#">Minhas Listas</a>
+                  
+                </li><!--Fim do Minhas Listas-->
+            </ul>
+            
+        </div>
+        
     <!--Incluir os scripts do bootstrap-->
 <%- include('./partials/scripts_import') %>
 </body>
